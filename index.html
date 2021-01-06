@@ -4,20 +4,67 @@
     <head>
         <title>Google Project  </title>
         <style>    
+
             header
-                {font-family: Arial, sans-serif; font-size: 14px;}
+            {position: fixed;
+            top: 0;
+            width: 100%;
+
+            
+            }
+
+            ul
+                {font-family: Arial, sans-serif; 
+                font-size: 13px;
+                color:#696363;
+                display: block;
+                list-style-type: none;
+                margin: 0px;
+                padding: 1px 1px;
+                overflow: hidden;
+                position: relative;
+                top: 0;
+                width: 100%;
+                text-align: center;}
+            
+
+            li
+                    {float: left;
+                    padding: 14px 16px;
+                    color: #696363;
+                    display: block;
+                    }
+                    
+                    
             footer 
-                {font-size: 14px; font-family: arial, sans-serif;}
+                {font-size: 14px; font-family: arial, sans-serif;
+                color: red;
+                position: static;
+                display: block;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                border: solid #e7e7e7;
+                 background-color: #e7e7e7;            }
+
+            img
+            {position: relative;
+            padding: 5% 50%;
+            }
+
            
         </style>
     </head>
     <header>
-        <h5>About</h5>
-        <h5>Store</h5>
-        <h5>Gmail</h5>
-        <h5>Images</h5>
+    <ul>
+        <li><a href="about.asp">About</a></li>
+        <li><a href="store.asp">Store</a></li>
+        <li style="float:right"><a href="gmail.asp">Gmail</a></li>
+        <li style="float:right"><a href="images.asp">Images</a></li>
+        <li style="float:right"><button type="Icon">Apps</button></li>
 
-    </header>
+    </ul>
+</header>
     <body>
     <p>  
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
@@ -25,16 +72,21 @@
                 <input type="text" placeholder="Search">
                 <button type="Submit">Submit</button>
             </form>
+            <ul>
+                <li>Google Search</li>
+                <li>I'm Feeling Lucky</li>
+                </ul>
         </p>
     <br></br>
     </body>
-
-    <footer >
-        <h5>Advertising</h5>
-        <h5>Business</h5>
-        <h5>How Search Works</h5>
-        <h5>Privacy</h5>
-        <h5>Terms</h5>
-        <h5>Settings</h5>
+    <footer>
+        <ul >
+            <li><a href="advertising.asp">Advertising</a></li>
+            <li><a href="business.asp">Business</a></li>
+            <li><a href="how search works.asp">How Search Works</a></li>
+            <li style="float:right"><a href="privacy.asp">Privacy</a></li>
+            <li style="float:right"><a href="terms.asp">Terms</a></li>
+            <li style="float:right"><a href="settings.asp">Settings</a></li>
+            </ul>
     </footer>
 </html>
