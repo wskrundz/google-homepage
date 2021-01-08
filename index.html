@@ -6,19 +6,19 @@
         </title>
 
         <style>
-            
+
             header
-            {position: fixed;
+            {position: static;
             top: 0;
             width: 100%;}
 
             img
                 {position: static;
-                padding: 2% 50%;}
+                padding: 2% 40%;}
 
             li
                 {float: left;
-                padding: 10px 12px;
+                padding: 10px 12px 10px 0px;
                 color: #696363;
                 display: block;}
             
@@ -35,19 +35,28 @@
                 overflow: hidden;
                 text-align: center;}
 
+            .abcd
+                {border-color: #695932;
+                border-width: thick;
+                position: relative;}
+
             .bottomfooter 
                 {font-size: 14px; font-family: arial, sans-serif;
-                color: #696363;
-                display: block;
+                color: #696363;}
+
+            .bottomborder
+                { display: block;
                 position: fixed;
                 bottom: 0;
-                width: 97%;
-                border: solid #e7e7e7;
-                border-width: thick;}
+                width: 100%;
+                border: solid hsl(0, 1%, 47%);
+                background-color: #e7e7e7 ; 
+                border-width: thin;}
+                    
             
             .searchhelp
                 {position: relative;
-                padding: 0% 50%;}
+                padding: 0% 40%;}
             
             .floatright
                 {float: right;}
@@ -55,16 +64,20 @@
 
         </style>
     </head>
+
+
     <body>
        <header>
 
-        <div>
+        <div class="abcd">
        <ul class="topfooter">
             <li>About</li>
             <li>Store</li>
+            <li style="float:right"><button type="Icon">Apps</button></li>
+            <li style="float:right"><button type="radio">G</button></li>
             <li class="floatright">Gmail</li>
             <li class="floatright">Images</li>
-         <li style="float:right"><button type="Icon">Apps</button></li>
+            
          </ul>
          </div>
 
@@ -91,7 +104,7 @@
         <br></br>
 
     <footer>
-        <div>
+        <div class="bottomborder">
          <ul class="bottomfooter">
              <li>Advertising </li>
              <li>Business</li>
