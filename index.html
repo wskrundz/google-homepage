@@ -1,20 +1,31 @@
-<!DOCTYPE html>
-<html lang=en>
-
+<DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Google Project  </title>
-        <style>    
+        <title>
+       Google Homepage Project
+        </title>
 
+        <style>
+            
             header
             {position: fixed;
             top: 0;
-            width: 100%;
+            width: 100%;}
 
+            img
+                {position: static;
+                padding: 2% 50%;}
+
+            li
+                {float: left;
+                padding: 10px 12px;
+                color: #696363;
+                display: block;}
             
-            }
+            footer            
+                    
 
-            ul
-                {font-family: Arial, sans-serif; 
+            .topfooter {font-family: Arial, sans-serif; 
                 font-size: 13px;
                 color:#696363;
                 display: block;
@@ -22,71 +33,74 @@
                 margin: 0px;
                 padding: 1px 1px;
                 overflow: hidden;
-                position: relative;
-                top: 0;
-                width: 100%;
                 text-align: center;}
-            
 
-            li
-                    {float: left;
-                    padding: 14px 16px;
-                    color: #696363;
-                    display: block;
-                    }
-                    
-                    
-            footer 
+            .bottomfooter 
                 {font-size: 14px; font-family: arial, sans-serif;
-                color: red;
-                position: static;
+                color: #696363;
                 display: block;
                 position: fixed;
                 bottom: 0;
-                width: 100%;
+                width: 97%;
                 border: solid #e7e7e7;
-                 background-color: #e7e7e7;            }
+                border-width: thick;}
+            
+            .searchhelp
+                {position: relative;
+                padding: 0% 50%;}
+            
+            .floatright
+                {float: right;}
 
-            img
-            {position: relative;
-            padding: 5% 50%;
-            }
 
-           
         </style>
     </head>
-    <header>
-    <ul>
-        <li><a href="about.asp">About</a></li>
-        <li><a href="store.asp">Store</a></li>
-        <li style="float:right"><a href="gmail.asp">Gmail</a></li>
-        <li style="float:right"><a href="images.asp">Images</a></li>
-        <li style="float:right"><button type="Icon">Apps</button></li>
-
-    </ul>
-</header>
     <body>
-    <p>  
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="Submit">Submit</button>
-            </form>
-            <ul>
-                <li>Google Search</li>
-                <li>I'm Feeling Lucky</li>
-                </ul>
-        </p>
-    <br></br>
-    </body>
+       <header>
+
+        <div>
+       <ul class="topfooter">
+            <li>About</li>
+            <li>Store</li>
+            <li class="floatright">Gmail</li>
+            <li class="floatright">Images</li>
+         <li style="float:right"><button type="Icon">Apps</button></li>
+         </ul>
+         </div>
+
+        </header>
+            <p>  
+                <div>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                </div>
+                    <div>
+                    <form class ="searchhelp"   >
+                        <input type="text" placeholder="Search">
+                        <button type="Submit">Submit</button>
+                    </form>
+                    </div>
+                    <div>
+                    <ul class="searchhelp">
+                         <li>Google Search</li>
+                         <li>I'm Feeling Lucky</li>
+                
+                    </ul>
+                    </div>
+           
+                </p>
+        <br></br>
+
     <footer>
-        <ul >
-            <li><a href="advertising.asp">Advertising</a></li>
-            <li><a href="business.asp">Business</a></li>
-            <li><a href="how search works.asp">How Search Works</a></li>
-            <li style="float:right"><a href="privacy.asp">Privacy</a></li>
-            <li style="float:right"><a href="terms.asp">Terms</a></li>
-            <li style="float:right"><a href="settings.asp">Settings</a></li>
-            </ul>
+        <div>
+         <ul class="bottomfooter">
+             <li>Advertising </li>
+             <li>Business</li>
+             <li>How Search Works</li>
+             <li class="floatright">Privacy</li>  
+             <li class="floatright">Terms</li>
+                <li class="floatright">Settings</li>
+         </ul>
+        </div>
     </footer>
+</body>
 </html>
